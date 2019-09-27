@@ -1,0 +1,109 @@
+<!ELEMENT spocosy (query-response)>
+<!ELEMENT query-response (sport)>
+<!ELEMENT sport (tournament_template)>
+<!ELEMENT tournament_template (tournament)>
+<!ELEMENT tournament (tournament_stage)>
+<!ELEMENT tournament_stage (event)>
+<!ELEMENT event (properties,event_participant+)>
+<!ELEMENT properties (property+)>
+<!ELEMENT property EMPTY>
+<!ELEMENT event_participant (participant,results?)>
+<!ELEMENT participant EMPTY>
+<!ELEMENT results (result+)>
+<!ELEMENT result EMPTY>
+<!ATTLIST spocosy version CDATA #REQUIRED>
+<!ATTLIST spocosy responsetime CDATA #IMPLIED>
+<!ATTLIST spocosy exec CDATA #IMPLIED>
+<!ATTLIST query-response requestid CDATA #REQUIRED>
+<!ATTLIST query-response service CDATA #IMPLIED>
+<!ATTLIST sport name CDATA #IMPLIED>
+<!ATTLIST sport enetSportCode CDATA #IMPLIED>
+<!ATTLIST sport del CDATA #IMPLIED>
+<!ATTLIST sport n CDATA #IMPLIED>
+<!ATTLIST sport ut CDATA #IMPLIED>
+<!ATTLIST sport id CDATA #IMPLIED>
+<!ATTLIST tournament_template name CDATA #IMPLIED>
+<!ATTLIST tournament_template sportFK CDATA #IMPLIED>
+<!ATTLIST tournament_template gender CDATA #IMPLIED>
+<!ATTLIST tournament_template enetID CDATA #IMPLIED>
+<!ATTLIST tournament_template del CDATA #IMPLIED>
+<!ATTLIST tournament_template n CDATA #IMPLIED>
+<!ATTLIST tournament_template ut CDATA #IMPLIED>
+<!ATTLIST tournament_template id CDATA #IMPLIED>
+<!ATTLIST tournament name CDATA #IMPLIED>
+<!ATTLIST tournament tournament_templateFK CDATA #IMPLIED>
+<!ATTLIST tournament enetSeasonID CDATA #IMPLIED>
+<!ATTLIST tournament del CDATA #IMPLIED>
+<!ATTLIST tournament locked CDATA #IMPLIED>	
+<!ATTLIST tournament n CDATA #IMPLIED>
+<!ATTLIST tournament ut CDATA #IMPLIED>
+<!ATTLIST tournament id CDATA #IMPLIED>
+<!ATTLIST tournament_stage name CDATA #IMPLIED>
+<!ATTLIST tournament_stage tournamentFK CDATA #IMPLIED>
+<!ATTLIST tournament_stage countryFK CDATA #IMPLIED>
+<!ATTLIST tournament_stage gender CDATA #IMPLIED>
+<!ATTLIST tournament_stage enetID CDATA #IMPLIED>
+<!ATTLIST tournament_stage startdate CDATA #IMPLIED>
+<!ATTLIST tournament_stage enddate CDATA #IMPLIED>
+<!ATTLIST tournament_stage del CDATA #IMPLIED>
+<!ATTLIST tournament_stage locked CDATA #IMPLIED>
+<!ATTLIST tournament_stage n CDATA #IMPLIED>
+<!ATTLIST tournament_stage ut CDATA #IMPLIED>
+<!ATTLIST tournament_stage id CDATA #IMPLIED>
+<!ATTLIST event name CDATA #IMPLIED>
+<!ATTLIST event tournament_stageFK CDATA #IMPLIED>
+<!ATTLIST event startdate CDATA #IMPLIED>
+<!ATTLIST event eventstatusFK CDATA #IMPLIED>
+<!ATTLIST event status_type CDATA #IMPLIED>
+<!ATTLIST event status_descFK CDATA #IMPLIED>
+<!ATTLIST event enetID CDATA #IMPLIED>
+<!ATTLIST event enetSportID CDATA #IMPLIED>
+<!ATTLIST event del CDATA #IMPLIED>
+<!ATTLIST event locked CDATA #IMPLIED>
+<!ATTLIST event n CDATA #IMPLIED>
+<!ATTLIST event ut CDATA #IMPLIED>
+<!ATTLIST event id CDATA #IMPLIED>
+<!ATTLIST property object CDATA #IMPLIED>
+<!ATTLIST property objectFK CDATA #IMPLIED>
+<!ATTLIST property type CDATA #IMPLIED>
+<!ATTLIST property name CDATA #IMPLIED>
+<!ATTLIST property value CDATA #IMPLIED>
+<!ATTLIST property del CDATA #IMPLIED>
+<!ATTLIST property n CDATA #IMPLIED>
+<!ATTLIST property ut CDATA #IMPLIED>
+<!ATTLIST property id CDATA #IMPLIED>
+<!ATTLIST event_participant number CDATA #IMPLIED>
+<!ATTLIST event_participant participantFK CDATA #IMPLIED>
+<!ATTLIST event_participant eventFK CDATA #IMPLIED>
+<!ATTLIST event_participant del CDATA #IMPLIED>
+<!ATTLIST event_participant n CDATA #IMPLIED>
+<!ATTLIST event_participant ut CDATA #IMPLIED>
+<!ATTLIST event_participant id CDATA #IMPLIED>
+<!ATTLIST participant name CDATA #IMPLIED>
+<!ATTLIST participant gender CDATA #IMPLIED>
+<!ATTLIST participant type CDATA #IMPLIED>
+<!ATTLIST participant countryFK CDATA #IMPLIED>
+<!ATTLIST participant enetID CDATA #IMPLIED>
+<!ATTLIST participant enetSportID CDATA #IMPLIED>
+<!ATTLIST participant del CDATA #IMPLIED>
+<!ATTLIST participant n CDATA #IMPLIED>
+<!ATTLIST participant ut CDATA #IMPLIED>
+<!ATTLIST participant id CDATA #IMPLIED>
+<!ATTLIST result event_participantsFK CDATA #IMPLIED>
+<!ATTLIST result result_typeFK CDATA #IMPLIED>
+<!ATTLIST result result_code CDATA #IMPLIED>
+<!ATTLIST result value CDATA #IMPLIED>
+<!ATTLIST result del CDATA #IMPLIED>
+<!ATTLIST result n CDATA #IMPLIED>
+<!ATTLIST result ut CDATA #IMPLIED>
+<!ATTLIST result id CDATA #IMPLIED>
+
+
+
+
+
+
+
+
+
+
