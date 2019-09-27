@@ -10,6 +10,7 @@ namespace TourDeFranceCyclist
 
     class Cyclist
     {
+        // added a line
         private string name;
         private string gender;
         private string countryOfOg;
