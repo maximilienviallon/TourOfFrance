@@ -11,20 +11,20 @@ namespace TourDeFranceCyclist
     class Cyclist
     {
         // added a line
-        private string name;
-        private string gender;
-        private string countryOfOg;
+        
         private string resultTime;
         private string endPosition;
-        public Cyclist(string name, string gender, string country, string result, string endPos)
+        public Cyclist(string Name, string Gender, string Country, string result, string endPos)
         {
-            this.name = name;
-            this.gender = gender;
-            this.countryOfOg = country;
+            name = Name;
+            gender = Gender;
+            country = Country;
             this.resultTime = result;
             this.endPosition = endPos;
         }
-
+        public string name { get; set; }
+        public string gender { get; set; }
+        public string country { get; set; }
     }
 
 
